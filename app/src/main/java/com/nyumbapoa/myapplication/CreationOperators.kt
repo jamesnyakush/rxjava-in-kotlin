@@ -44,3 +44,6 @@ fun createInterval(): Observable<Long> {
     return Observable.interval(1, TimeUnit.SECONDS).takeWhile { value -> value < 20 }
 }
 
+fun createTimer(): Observable<Long> {
+    return Observable.timer(5, TimeUnit.SECONDS)
+}

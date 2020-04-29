@@ -2,6 +2,7 @@ package com.nyumbapoa.myapplication
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -12,19 +13,27 @@ class MainActivity : AppCompatActivity() {
 
         //showJustJob()
 
-        //createFromArray().subscribe { arr ->
-        //  toast("Received array is" + Arrays.toString(arr))
-        //}
+        /*createFromArray().subscribe { arr ->
+          toast("Received array is" + Arrays.toString(arr))
+        }*/
 
-        // createFromIteratable().subscribe { a ->
-        //   toast("Received data is: $a")
-        //}
+        /*createFromIteratable().subscribe { a ->
+            toast("Received data is: $a")
+        }*/
 
-        //createRange().subscribe { a ->
-        //    println("Received data is: $a")
-        //}
+        /*createRange().subscribe { a ->
+            println("Received data is: $a")
+        }*/
 
-        createInterval().subscribe {a->
+        /*createInterval().subscribe {a->
+            println("Received data is: $a")
+        }*/
+
+        /*createTimer().subscribe {a->
+            println("Food is ready after: $a")
+        }*/
+
+        createFilter().subscribe { a ->
             println("Received data is: $a")
         }
     }

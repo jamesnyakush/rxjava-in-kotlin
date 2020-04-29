@@ -16,8 +16,11 @@ class MainActivity : AppCompatActivity() {
 
         //showJustJob()
 
-        createFromArray().subscribe { arr ->
-            toast("Received array is" + Arrays.toString(arr))
+        // createFromArray().subscribe { arr ->
+        //     toast("Received array is" + Arrays.toString(arr))
+        // }
+        createFromIteratable().subscribe { a ->
+            toast("Received data is: $a")
         }
     }
 
@@ -46,6 +49,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun createFromArray(): Observable<Array<Int>> {
         return Observable.fromArray(arrayOf(1, 5, 7, 9))
+    }
+
+    private fun createFromIteratable(): Observable<Int> {
+        return Observable.fromIterable(mutableListOf(2, 5, 7))
     }
 
 }

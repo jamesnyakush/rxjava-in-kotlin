@@ -5,6 +5,7 @@ import android.os.Bundle
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Observer
 import io.reactivex.rxjava3.disposables.Disposable
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         //showJustJob()
 
-
+        createFromArray().subscribe { arr ->
+            toast("Received array is" + Arrays.toString(arr))
+        }
     }
 
     private fun showJustJob() {
@@ -41,5 +44,8 @@ class MainActivity : AppCompatActivity() {
         dataStream.subscribe(dataObserver)
     }
 
+    private fun createFromArray(): Observable<Array<Int>> {
+        return Observable.fromArray(arrayOf(1, 5, 7, 9))
+    }
 
 }

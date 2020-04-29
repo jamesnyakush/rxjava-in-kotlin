@@ -34,3 +34,7 @@ fun createFromArray(): Observable<Array<Int>> {
 fun createFromIteratable(): Observable<Int> {
     return Observable.fromIterable(mutableListOf(2, 5, 7))
 }
+
+fun createRange(): Observable<Int>{
+    return Observable.range(40,10)
+}

@@ -1,11 +1,7 @@
 package com.nyumbapoa.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.core.Observer
-import io.reactivex.rxjava3.disposables.Disposable
-import java.util.*
+import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,19 +12,18 @@ class MainActivity : AppCompatActivity() {
 
         //showJustJob()
 
-         //createFromArray().subscribe { arr ->
-           //  toast("Received array is" + Arrays.toString(arr))
-         //}
+        //createFromArray().subscribe { arr ->
+        //  toast("Received array is" + Arrays.toString(arr))
+        //}
 
-       // createFromIteratable().subscribe { a ->
-         //   toast("Received data is: $a")
+        // createFromIteratable().subscribe { a ->
+        //   toast("Received data is: $a")
+        //}
+
+        //createRange().subscribe { a ->
+        //    println("Received data is: $a")
         //}
     }
-
-
-
-
-
 
 
 }

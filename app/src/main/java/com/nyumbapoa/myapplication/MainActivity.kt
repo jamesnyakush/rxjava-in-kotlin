@@ -41,9 +41,18 @@ class MainActivity : AppCompatActivity() {
             println("Received data is: $a")
         }*/
 
-        createTake().subscribe { a ->
+        /*createTake().subscribe { a ->
             println("Received data is: $a")
-        }
+        }*/
+
+        CreateTimeOut("jjj").subscribe(
+            { name ->
+                println("Welcome $name")
+            }, { t ->
+                println("You have an Error" + t.javaClass.simpleName)
+            }
+        )
+
     }
 
 

@@ -20,9 +20,9 @@ class MainActivity : AppCompatActivity() {
         //   toast("Received data is: $a")
         //}
 
-        //createRange().subscribe { a ->
-        //    println("Received data is: $a")
-        //}
+        createRange().subscribe { a ->
+            println("Received data is: $a")
+        }
     }
 
 

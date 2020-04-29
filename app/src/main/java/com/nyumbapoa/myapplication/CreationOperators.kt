@@ -36,5 +36,5 @@ fun createFromIteratable(): Observable<Int> {
 }
 
 fun createRange(): Observable<Int>{
-    return Observable.range(40,10)
+    return Observable.range(1,3).repeat(3)
 }

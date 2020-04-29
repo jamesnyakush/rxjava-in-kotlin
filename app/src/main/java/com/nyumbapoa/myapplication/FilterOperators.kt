@@ -8,3 +8,15 @@ fun createFilter(): Observable<Int> {
             x > 10
         }
 }
+
+fun createTakelast(): Observable<Int> {
+    return Observable.just(2, 40, 30, 5)
+        .takeLast(2)
+}
+
+fun createTake(): Observable<Int> {
+    return Observable.just(2, 40, 30, 5)
+        .take(2)
+}
+
+

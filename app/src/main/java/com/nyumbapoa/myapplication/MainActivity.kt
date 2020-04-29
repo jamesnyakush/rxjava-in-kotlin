@@ -33,7 +33,15 @@ class MainActivity : AppCompatActivity() {
             println("Food is ready after: $a")
         }*/
 
-        createFilter().subscribe { a ->
+        /*createFilter().subscribe { a ->
+            println("Received data is: $a")
+        }*/
+
+        /*createTakelast().subscribe { a ->
+            println("Received data is: $a")
+        }*/
+
+        createTake().subscribe { a ->
             println("Received data is: $a")
         }
     }

@@ -20,7 +20,11 @@ class MainActivity : AppCompatActivity() {
         //   toast("Received data is: $a")
         //}
 
-        createRange().subscribe { a ->
+        //createRange().subscribe { a ->
+        //    println("Received data is: $a")
+        //}
+
+        createInterval().subscribe {a->
             println("Received data is: $a")
         }
     }
